@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registroFragment">
+
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.example.myapplication.RegistroFragment"
+        android:label="Registro" >
+        <action
+            android:id="@+id/action_registroFragment_to_categoriasFragment"
+            app:destination="@id/categoriasFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoriasFragment"
+        android:name="com.example.myapplication.CategoriasFragment"
+        android:label="Categorías" />
+</navigation>
