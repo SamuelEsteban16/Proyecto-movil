@@ -7,8 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -90,18 +89,20 @@
                 android:weightSum="4">
 
                 <Button
-                    android:layout_weight="1"
+                    android:id="@+id/btn_comics"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
-                    android:text="COMICS"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
                     android:background="@drawable/btn_seleccion"
-                    android:textColor="#FFFFFF"
-                    android:textAllCaps="false"
                     android:padding="8dp"
-                    android:textSize="12sp"
-                    android:layout_marginEnd="4dp" />
+                    android:text="COMICS"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
 
                 <Button
+                    android:id="@+id/btn_vestir"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
@@ -114,6 +115,7 @@
                     android:layout_marginEnd="4dp" />
 
                 <Button
+                    android:id="@+id/btn_viajes"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
@@ -126,6 +128,7 @@
                     android:layout_marginEnd="4dp" />
 
                 <Button
+                    android:id="@+id/btn_paisajes"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
@@ -155,6 +158,7 @@
             android:padding="8dp">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/contenedor1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
@@ -179,6 +183,7 @@
                         android:layout_marginEnd="12dp" />
 
                     <LinearLayout
+                        android:id="@+id/contenidoComic1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -199,45 +204,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" />
                     </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/corazon" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp"
-                android:elevation="6dp"
-                app:cardCornerRadius="24dp"
-                app:cardBackgroundColor="@android:color/white">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="12dp"
-                    android:gravity="center_vertical">
-
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:src="@drawable/cate"
-                        android:layout_marginEnd="12dp" />
-
                     <LinearLayout
+                        android:id="@+id/contenidoVestir1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
                         <TextView
-                            android:text="Cómico "
+                            android:text="Camisas"
                             android:textSize="16sp"
                             android:textStyle="bold"
                             android:textColor="#000000"
@@ -245,7 +220,51 @@
                             android:layout_height="wrap_content" />
 
                         <TextView
-                            android:text="Cómics cómicos son historietas centradas en el humor, con personajes y situaciones exageradas para divertir al lector. Pueden ser tiras cómicas o series más largas. Ejemplos famosos incluyen Garfield, Mafalda y Asterix"
+                            android:text="Características: Cuello estructurado, botones simples, diseño liso o con rayas sutiles.Ocasiones: Eventos formales como bodas, reuniones de negocios o cenas elegantes.Tips: Se combina mejor con un traje y corbata para un look impecable."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/contenidoViajes1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="Avion"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="Viajar en avión es una experiencia que implica varios pasos, desde la llegada al aeropuerto hasta la llegada a destino. Involucra el check-in, los controles de seguridad, el embarque y el vuelo en sí. Es importante estar preparado y seguir las indicaciones de la aerolínea y del personal del aeropuerto para un viaje tranquilo. "
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/contenidoPaisajes1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="Nevados"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="Los paisajes nevados suelen presentar un entorno montañoso cubierto de nieve, con elementos como árboles, lagos y montañas que contrastan con el blanco de la nieve. Estos paisajes a menudo ofrecen una paleta de colores limitada, donde el blanco de la nieve y el azul del cielo son los más prominentes, aunque también pueden incluir tonos marrones, tostados y verdes en los árboles. "
                             android:textSize="12sp"
                             android:textColor="#444444"
                             android:layout_width="wrap_content"
@@ -253,12 +272,14 @@
                     </LinearLayout>
 
                     <ImageView
+                        android:id="@+id/corazon1"
                         android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_height="21dp"
                         android:src="@drawable/corazon" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/contenedor2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
@@ -283,6 +304,106 @@
                         android:layout_marginEnd="12dp" />
 
                     <LinearLayout
+                        android:id="@+id/contenidoComic2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="Ciencia ficción"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="Cómics de ciencia ficción exploran futuros alternativos, tecnología avanzada y viajes espaciales. Mezclan aventura con conceptos científicos y especulativos. Ejemplos famosos incluyen Judge Dredd, Valérian y The Incal."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/contenidoVestir2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="Pantalones"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="El pantalón es una prenda de vestir que se ajusta a la cintura y llega a una altura variable de la pierna o hasta los tobillos, cubriendo cada pierna por separado. Generalmente consta de dos perneras."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/contenidoPaisajes2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="Naturales"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="Los principales elementos naturales de un paisaje son aquellos que han sido creados por la naturaleza sin intervención humana. Estos incluyen el relieve (montañas, llanuras, etc.), el agua (ríos, lagos, mares, etc.), la vegetación, la fauna, y el clima. Además, se pueden considerar elementos como el suelo y los minerales. "
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/corazon2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/corazon" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/contenedor3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="24dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/cate"
+                        android:layout_marginEnd="12dp" />
+
+                    <LinearLayout
+                        android:id="@+id/contenidoComic3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -303,8 +424,75 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" />
                     </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/contenidoVestir3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="Medias"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text=" materiales utilizados para su fabricación, como algodón, nylon, o elastano."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/contenidoViajes3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="Vehiculos"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="Para viajar en vehículo de forma segura y legal, es crucial tener los documentos necesarios, un kit de carretera completo y realizar una revisión previa del vehículo."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/contenidoPaisajes3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="Artificiales"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="No hay contenido disponible."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
 
                     <ImageView
+                        android:id="@+id/corazon3"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/corazon" />
@@ -312,19 +500,6 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btn_siguiente"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="SIGUIENTE"
-            android:background="@drawable/btn_seleccion"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:backgroundTint="#FF0000"
-            android:textColor="#FFFFFF"
-            android:padding="8dp"
-            android:layout_marginTop="16dp" />
 
 
     </LinearLayout>
@@ -351,12 +526,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Categoria" />
-
-        <Button
-            android:id="@+id/btn_tipo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tipo" />
 
         <Button
             android:id="@+id/btn_perfil"

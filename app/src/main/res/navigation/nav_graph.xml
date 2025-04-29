@@ -7,14 +7,105 @@
     <fragment
         android:id="@+id/registroFragment"
         android:name="com.example.myapplication.RegistroFragment"
-        android:label="Registro" >
+        android:label="Registro">
         <action
-            android:id="@+id/action_registroFragment_to_categoriasFragment"
+            android:id="@+id/action_categoria"
             app:destination="@id/categoriasFragment" />
+        <action
+            android:id="@+id/action_crearCuenta"
+            app:destination="@id/crearCuenta" />
     </fragment>
 
     <fragment
         android:id="@+id/categoriasFragment"
         android:name="com.example.myapplication.CategoriasFragment"
-        android:label="Categorías" />
+        android:label="Categorías" >
+        <action
+            android:id="@+id/action_crearCuenta"
+            app:destination="@id/modificateFragment" />
+        <action
+            android:id="@+id/action_cerrar"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_type"
+            app:destination="@id/typeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/typeFragment"
+        android:name="com.example.myapplication.TypeFragment"
+        android:label="type" >
+        <action
+            android:id="@+id/action_categoria"
+            app:destination="@id/categoriasFragment" />
+        <action
+            android:id="@+id/action_crearCuenta"
+            app:destination="@id/modificateFragment" />
+        <action
+            android:id="@+id/action_cerrar"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_enlace"
+            app:destination="@id/enlaceFragment" />
+        <action
+            android:id="@+id/action_fotos"
+            app:destination="@id/fotosFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fotosFragment"
+        android:name="com.example.myapplication.PicturesFragment"
+        android:label="fotos" >
+        <action
+            android:id="@+id/action_catego"
+            app:destination="@id/categoriasFragment" />
+        <action
+            android:id="@+id/action_crearC"
+            app:destination="@id/modificateFragment" />
+        <action
+            android:id="@+id/action_cerr"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_ty"
+            app:destination="@id/typeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/enlaceFragment"
+        android:name="com.example.myapplication.ColeccionEnlacesFragment"
+        android:label="enlace" >
+        <action
+            android:id="@+id/action_categoria"
+            app:destination="@id/categoriasFragment" />
+        <action
+            android:id="@+id/action_crearCuenta"
+            app:destination="@id/modificateFragment" />
+        <action
+            android:id="@+id/action_cerrar"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_type"
+            app:destination="@id/typeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/modificateFragment"
+        android:name="com.example.myapplication.ModificateAccountFragment"
+        android:label="modificar" >
+        <action
+            android:id="@+id/action_categoria"
+            app:destination="@id/categoriasFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/crearCuenta"
+        android:name="com.example.myapplication.CreateAccountFragment"
+        android:label="CrearCuenta">
+    <action
+        android:id="@+id/action_login"
+        app:destination="@id/registroFragment" />
+    </fragment>
+
+
 </navigation>

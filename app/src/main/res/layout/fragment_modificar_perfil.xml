@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1C">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/curva_arriba"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/cate"
+                android:background="@drawable/circulo_blanco"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modificar perfil"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="4dp"
+            android:clipToPadding="false"
+            android:background="@drawable/redondeado_blanco">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cate"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion"
+                android:textColor="#000000"
+                android:layout_marginStart="12dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/formulario_fondo"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText android:hint="Nombre:" style="@style/FormField" />
+                <EditText android:hint="Apellido:" style="@style/FormField" />
+                <EditText android:hint="Correo:" style="@style/FormField" />
+                <EditText android:hint="Edad:" style="@style/FormField" />
+                <EditText android:hint="Contraseña:" style="@style/FormField" android:inputType="textPassword" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_volver"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Volver"
+                android:backgroundTint="#2D9CDB"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Modificar"
+                android:backgroundTint="#EB5757"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
